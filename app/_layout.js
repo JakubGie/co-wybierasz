@@ -1,4 +1,4 @@
-import { Stack } from "expo-router"
+import { Stack, Tab } from "expo-router"
 
 const StackLayout = () => {
     return (
