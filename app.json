@@ -4,10 +4,25 @@
     "web": {
       "bundler": "metro"
     },
+    "name": "Co wybierasz?",
+    "icon": "./assets/img/icon.png",
+    "backgroundColor": "#0069ef",
+    "splash": {
+      "image": "./assets/img/splashscreen.png",
+      "backgroundColor": "#0069ef"
+    },
+    "version": "1.0.0",
     "plugins": [
       "expo-router"
     ],
-    "name": "co-wybierasz",
-    "slug": "co-wybierasz"
+    "slug": "co-wybierasz",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c07b9c67-8372-421f-8798-e424a0ad906b"
+      }
+    }
   }
 }

@@ -196,7 +196,7 @@ const Button = () => {
                 </View>
                 <View style={{position:"absolute",left:0,top:0,height:"100%",width:"100%",display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
                     <View style={[
-                        resultsShown?{justifyContent:"center"}:{justifyContent:"flex-end"},
+                        resultsShown?{justifyContent:"center"}:{justifyContent:"center"},
                         {backgroundColor:"#fff",height:"100%",display:"flex",flexDirection:"row",paddingRight:10,alignItems:"center",width:"67%",borderTopRightRadius:99999,borderBottomRightRadius:99999}]}>
 
                         {resultsShown ? <>
@@ -211,7 +211,9 @@ const Button = () => {
                                 {question.result}%</Text>
                                 <Text style={[
                                     styles.font,
-                                    {color:"black",fontSize:17}
+                                    {fontSize:17},
+                                    question.result>50?{color:"green"}:{color:"#DE2020"},
+                                    question.result===50?{color:"black"}:{}
                                 ]}>NACISNĘŁO</Text>
                             </View>
 
@@ -226,13 +228,14 @@ const Button = () => {
                                 colorsTime={[7, 5, 2, 0]}
                             >
                                 {({ remainingTime }) => <Text style={[
-                                    styles.font
+                                    styles.fontBold,
+                                    {paddingBottom:10}
                                 ]}>{remainingTime}</Text>}
 
                                 
                             </CountdownCircleTimer>
 
-                            <TouchableOpacity onPress={() => showResults()} style={{backgroundColor:"red",height:"80%",aspectRatio:1,borderRadius:99999999,marginLeft:10,display:"flex",justifyContent:"center",alignItems:"center"}}>
+                            <TouchableOpacity onPress={() => showResults()} style={{backgroundColor:"red",paddingLeft:2,height:"80%",aspectRatio:1,borderRadius:99999999,marginLeft:10,display:"flex",justifyContent:"center",alignItems:"center"}}>
                                 <Text><Ionicons name="radio-button-on" size={40} color="#fff" /></Text>
                             </TouchableOpacity>
                         </>}

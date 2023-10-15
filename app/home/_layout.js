@@ -1,5 +1,5 @@
 import { Stack, Tabs } from "expo-router"
-import { Text, View } from "react-native"
+import { Text, View, Image } from "react-native"
 import { styles } from "../../assets/styles/Style"
 import { FontAwesome5 } from '@expo/vector-icons'
 import { Ionicons } from '@expo/vector-icons'
@@ -17,14 +17,12 @@ const StackLayout = () => {
             },
             headerTitleAlign: "center",
             headerTitle: () => (
-                    <Text style={[
-                    styles.fontBold,
-                    {color:"#000",fontSize:20}
-                ]}>Co wybierasz?</Text>
+                <Image source={require('../../assets/img/icon.png')} style={{height:40,aspectRatio:1,borderRadius:9999}}/>
             ),
             tabBarStyle:{borderTopLeftRadius:30,borderTopRightRadius:30,backgroundColor:"#fff",height:70,alignItems:"center",justifyContent:"center",overflow:"hidden",position:'absolute'},
             tabBarActiveBackgroundColor:"#f7f7f7",
             headerTitleStyle:{fontFamily:"Poppins-Bold"},
+           
 
          
         }}>
