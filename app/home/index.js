@@ -28,6 +28,17 @@ const Home = () => {
         {id: 3, question1: "Zawsze mówić prawdę, ale nie być lubianym", question2: "Zawsze kłamać, ale być lubianym", result1: 33, result2: 67, image1: -1, image2: -1},
         {id: 4, question1: "Dużo zarabiać, ale nie lubić swojej pracy", question2: "Mało zarabiać, ale lubić swoją pracę", result1: 38, result2: 62, image1: -1, image2: -1},
         {id: 5, question1: "Poznać datę swojej śmierci", question2: "Nie wiedzieć kiedy umrzesz", result1: 41, result2: 59, image1: -1, image2: -1},
+        {id: 6, question1: "Coca Cola", question2: "Pepsi", result1: 62, result2: 38, image1: -1, image2: -1},
+        {id: 7, question1: "Żyć bez przyjaźni", question2: "Żyć bez miłości", result1: 73, result2: 27, image1: -1, image2: -1},
+        {id: 8, question1: "Umrzeć szczęśliwy za rok", question2: "Umrzeć nieszczęśliwy za 40 lat", result1: 71, result2: 29, image1: -1, image2: -1},
+        {id: 9, question1: "Nigdy nie jeść pizzy", question2: "Nigdy nie jeść sushi", result1: 19, result2: 81, image1: -1, image2: -1},
+        {id: 10, question1: "Nie obchodzić świąt", question2: "Nie obchodzić urodzin", result1: 36, result2: 64, image1: -1, image2: -1},
+        {id: 11, question1: "Nie słyszeć", question2: "Nie mówić", result1: 34, result2: 66, image1: -1, image2: -1},
+        {id: 12, question1: "Zobaczyć przyjaciela z Twoją drugą połówką", question2: "Zobaczyć wroga z Twoją drugą połówką", result1: 29, result2: 71, image1: -1, image2: -1},
+        {id: 13, question1: "Zjeść 10 zgniłych ziemniaków", question2: "Już nigdy nie zjeść lodów", result1: 36, result2: 64, image1: -1, image2: -1},
+        {id: 14, question1: "Psy", question2: "Koty", result1: 70, result2: 30, image1: -1, image2: -1},
+        {id: 15, question1: "Być głupi, ale lubiany", question2: "Być mądry, ale nie lubiany", result1: 55, result2: 45, image1: -1, image2: -1},
+        {id: 16, question1: "Mieć dużo znajomych", question2: "Mieć kilku przyjaciół", result1: 38, result2: 62, image1: -1, image2: -1}
 
     ]
 

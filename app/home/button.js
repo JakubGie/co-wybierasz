@@ -30,7 +30,27 @@ const Button = () => {
 
     const questions = [
         {id: 1, question1: "Dostajesz wymarzony samochód", question2: "Musisz nim jeździć przepisowo do końca życia", result: 60, image1: -1, image2: -1},
-        {id: 2, question1: "Za każdy krok dostajesz 10 złotych", question2: "Wszędzie musisz chodzić po klockach lego", result: 61, image1: -1, image2: -1}
+        {id: 2, question1: "Za każdy krok dostajesz 10 złotych", question2: "Wszędzie musisz chodzić po klockach lego", result: 61, image1: -1, image2: -1},
+        {id: 3, question1: "Możesz podróżować po całym świecie", question2: "Nigdy więcej nie możesz zobaczyć swojej rodziny", result: 34, image1: -1, image2: -1},
+        {id: 4, question1: "Dostajesz wymarzoną pracę", question2: "Musisz pracować 7 dni w tygodniu", result: 62, image1: -1, image2: -1},
+        {id: 5, question1: "Możesz być niewidzalny", question2: "Już na zawsze", result: 27, image1: -1, image2: -1},
+        {id: 6, question1: "Możesz znać wszystkie języki świata", question2: "Być niemym", result: 22, image1: -1, image2: -1},
+        {id: 7, question1: "Możesz się przenieść w czasie", question2: "Bez powrotu", result: 74, image1: -1, image2: -1},
+        {id: 8, question1: "Możesz mówić w każdym języku świata", question2: "Nie rozumiesz co mówią inni", result: 52, image1: -1, image2: -1},
+        {id: 9, question1: "Możesz mieć dar leczenia innych", question2: "Samemu być chorym", result: 32, image1: -1, image2: -1},
+        {id: 10, question1: "Możesz być bardzo znany i popularny", question2: "Nie mieć prywatności", result: 71, image1: -1, image2: -1},
+        {id: 11, question1: "Masz możliwość pójść na najlepsze studia na świecie", question2: "Musisz studiować przedmiot, którego nie lubisz", result: 43, image1: -1, image2: -1},
+        {id: 12, question1: "Możesz sprawić, że ktoś się w Tobie zakocha", question2: "Następnego dnia o Tobie zapomni", result: 46, image1: -1, image2: -1},
+        {id: 13, question1: "Nigdy się nie zestarzejesz", question2: "Zawsze będziesz miał 13 lat", result: 64, image1: -1, image2: -1},
+        {id: 14, question1: "Będziesz żyć wiecznie", question2: "Twoja ukochana osoba umrze", result: 34, image1: -1, image2: -1},
+        {id: 15, question1: "Magia będzie prawdziwa", question2: "Nie będziesz mógł jej używać", result: 75, image1: -1, image2: -1},
+        {id: 16, question1: "Dostajesz wszystkie pieniądze Elona Muska", question2: "Umierasz kiedy on umrze", result: 41, image1: -1, image2: -1},
+        {id: 17, question1: "Dostajesz milion dolarów", question2: "Jest 20% szans, że od razu umrzesz", result: 20, image1: -1, image2: -1},
+        {id: 18, question1: "Możesz zadać pytanie Jezusowi", question2: "Tracisz 15 lat swojego życia", result: 62, image1: -1, image2: -1},
+        {id: 19, question1: "Możesz kontrolować pogodę", question2: "Jest ona zależna od Twoich emocji", result: 60, image1: -1, image2: -1},
+        {id: 20, question1: "Możesz skończyć głód na świecie", question2: "Nie możesz umyć zębów przez rok", result: 42, image1: -1, image2: -1},
+        {id: 21, question1: "Nigdy nie musisz płacić za jedzenie", question2: "Każdy posiłek jest słony", result: 34, image1: -1, image2: -1},
+        {id: 22, question1: "Możesz zresetować swoje życie", question2: "Nigdy nie spotkasz nikogo z obecnego życia", result: 34, image1: -1, image2: -1}
 
     ]
 
@@ -105,7 +125,6 @@ const Button = () => {
 
         AsyncStorage.getItem('answeredQuestion2').then((value) => { 
 
-            
 
             if(value!==null) {
                 var count = (value.match(/,/g) || []).length+1
@@ -222,7 +241,7 @@ const Button = () => {
                                 key={key}
                                 size="64"
                                 isPlaying={isPlaying}
-                                duration={8}
+                                duration={6}
                                 colors={['#2D6BC8', '#2D6BC8', '#DE2020', '#DE2020']}
                                 onComplete={() => endOfTime()}
                                 colorsTime={[7, 5, 2, 0]}
