@@ -21,8 +21,12 @@
         "origin": false
       },
       "eas": {
-        "projectId": "c07b9c67-8372-421f-8798-e424a0ad906b"
+        "projectId": "c541dbed-3155-4b82-b6e6-fb9af55b6d54"
       }
+    },
+    "android": {
+      "package": "com.jg.cowybierasz",
+      "versionCode": 1
     }
   }
 }
